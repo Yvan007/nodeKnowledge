@@ -1,0 +1,63 @@
+{
+  "name": "knowlege-api",
+  "version": "1.0.0",
+  "description": "知识体系库",
+  "author": "zhaojinsheng",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/.bin/nodemon bin/run.js",
+    "koa": "runkoa bin/www.js",
+    "pm2": "pm2 start bin/run.js",
+    "start_koa": "bin/run.js",
+    "docs": "apidoc -i app/ -o docs"
+  },
+  "apidoc": {
+    "title": "knowlege-api",
+    "url": "http://localhost:3000",
+    "sampleUrl": "http://localhost:3000"
+  },
+  "dependencies": {
+    "@alicloud/sms-sdk": "^1.0.2",
+    "apidoc": "^0.16.1",
+    "archiver": "^2.1.0",
+    "bcrypt": "^0.8.5",
+    "busboy": "^0.2.14",
+    "co": "^4.6.0",
+    "debug": "^2.2.0",
+    "fs-promise": "^2.0.0",
+    "glob": "^7.0.0",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^7.1.9",
+    "koa": "^2.0.0-alpha.6",
+    "koa-bodyparser": "^3.0.0",
+    "koa-convert": "^1.2.0",
+    "koa-cors": "^0.0.16",
+    "koa-json": "^1.1.1",
+    "koa-logger": "^2.0.0",
+    "koa-mount": "^1.3.0",
+    "koa-onerror": "^1.2.1",
+    "koa-passport": "^2.0.1",
+    "koa-router": "^7.0.1",
+    "koa-send": "^4.1.2",
+    "koa-session2": "^2.2.5",
+    "koa-static": "^2.0.0",
+    "koa-views": "^5.0.1",
+    "koa2-cors": "^2.0.5",
+    "log4js": "^0.6.38",
+    "moment": "^2.20.1",
+    "mongoose": "^4.4.3",
+    "ms": "^2.1.1",
+    "mysql": "^2.0.1",
+    "passport-local": "^1.0.0",
+    "request": "^2.83.0",
+    "runkoa": "^1.3.1",
+    "sequelize": "^3.30.2",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "nodemon": "^1.8.1",
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
+  }
+}

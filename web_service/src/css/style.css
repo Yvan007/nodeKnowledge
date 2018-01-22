@@ -1,0 +1,257 @@
+/* commom style */
+.layout body,.layout ul,.layout ol,.layout li,.layout p,.layout h1,.layout h2,.layout h3,.layout h4,.layout h5,.layout h6,.layout form,.layout fieldset,.layout table,.layout td,.layout img,.layout div{margin:0;padding:0;border:0;}
+body{color:#797979;font-size:12px; margin-top:5px;font-family:"'Ruda', sans-serif,SimSun","宋体","Arial Narrow";}
+.layout ul,.layout ol{list-style-type:none;}
+.layout select, .layout input, .layout img, .layout select{vertical-align:middle;}
+.layout a{text-decoration:none;}
+.layout a:visited{}
+.layout a:hover,
+.layout a:active,
+.layout a:focus{text-decoration:underline;}
+.layout th{text-align: center;}
+/*右侧*/
+.layout .layout-content{
+  background: #F2F2F2;
+  margin-left: 210px;
+  margin-top: 55px;
+}
+.layout .input{ text-indent: 1rem; height: 35px; }
+.layout .navbar{ margin-bottom: 0; width: 100%; position: fixed; left: 0; min-height: 50px; top: 0; border: 1px solid transparent; border-radius: 0;  }
+.layout .logo{ width: 100%; background: #365063; height: 60px; z-index: 999;line-height: 60px; position: fixed; left: 0; min-height: 50px; top: 0; margin-bottom: 20px; border: 1px solid transparent; }
+.layout .logo_font{ color: white; line-height: 27px; }
+.layout .menu{ float: left; margin:0 28px; font-size: 28px; color: #797979; }
+.layout .login-btn-box{ width: 220px; right:30px; top: -2px; position: absolute; }
+.layout .affix{ width: 210px; }
+.layout .small_affix li{ display: block; }
+.layout .small_affix li a{ position: relative; display: block; padding: 10px 15px; }
+.layout .nav-collapse .affix li a{ color: white; padding: 20px 15px }
+.layout .nav-collapse .affix li a:hover{ background: #68DFF0; cursor:pointer }
+.layout .nav-collapse{ width: 210px; height: 100%; top: 60px; position: fixed; background: #424a5d; }
+.layout .clearfix:before,.clearfix:after{ content:""; display:block; clear:both; height:0; }
+.layout .select-w150{ width: 150px; height: 35px; text-indent: 1rem; margin-left: 20px; }
+.layout .select-w350{ width: 350px; height: 35px; }
+.layout .input-w500{ width: 500px; text-indent: 1rem; height: 35px; border-radius: 5px; outline:none; }
+.layout .layout-content{ background: white; margin-left: 210px; margin-top: 60px; }
+
+/*table盒子*/
+.table-box{
+  height: 430px;
+}
+
+/*添加项目，添加体系，添加渠道模态框*/
+
+.layout .channel-modal .modal-dialog{
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  margin-left: -300px;
+}
+.layout .channel-modal .modal-dialog .modal-title{
+  text-align: center;
+  padding:15px 0;
+}
+.layout .channel-modal .modal-dialog .modal-footer{
+  text-align: center;
+  padding: 20px 0;
+}
+.layout .channel-modal .modal-dialog .modal-add-channel-name{
+  width:64%;
+  margin:0 auto;
+  height: 56px;
+  line-height: 2.5;
+  padding: 10px 0;
+}
+.layout .channel-modal .modal-dialog .modal-add-channel-describe{
+  position: relative;
+  width:64%;
+  margin:0 auto;
+  padding:16px 0;
+}
+.layout .channel-modal .modal-add-channel-describe span{
+  position:absolute;
+  left:10px;
+}
+.layout .channel-modal .modal-dialog .modal-add-channel-describe .text-area{
+  width: 300px;
+  height: 200px;
+  margin-left:64px;
+  text-indent: 1em;
+}
+.layout .channel-modal .modal-dialog .modal-body .input-w300{
+  width: 300px;
+  height:35px;
+  text-indent: 1rem;
+  outline: none;
+}
+.layout .channel-modal .modal-dialog .submit-model{
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  display: none;
+  border: 1px solid grey;
+  text-align: center;
+  line-height: 40px;
+  margin-left: -50px;
+  margin-top: -20px;
+}
+/*添加角色模态框*/
+.layout .distribution-modal .modal-dialog{
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  margin-left: -300px;
+}
+.layout .distribution-modal .modal-dialog .modal-header hr{
+  border-top: 1px solid #797979;
+  margin-top:0px;
+  margin-bottom:10px;
+}
+.layout .distribution-modal .modal-dialog .modal-title{
+  text-align: center;
+  padding:15px 0;
+}
+.layout .distribution-modal .modal-dialog .modal-body{
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+}
+.layout .distribution-modal .modal-dialog .modal-body .role{
+  cursor: pointer;
+  display: inline-block;
+}
+.layout .distribution-modal .role-series{
+  padding: 0px 0 0px 20px;
+  display: none;
+  cursor: pointer;
+}
+.layout .distribution-modal .fa-plus-square-o,.layout .distribution-modal .fa-minus-square-o{
+  font-size:16px;
+}
+.layout .distribution-modal .role-series .role-series-1{
+  padding: 0 0 0 20px;
+}
+.layout .distribution-modal .role-series .role-series-1 li{
+  display: none;
+}
+.layout .distribution-modal .modal-dialog .modal-footer{
+  text-align: center;
+  padding: 20px 0;
+}
+.layout .common-page{
+  margin: 40px 0;
+}
+.layout .distribution-modal input{
+  vertical-align: top;
+}
+/* 分页active */
+.layout .active{
+  background-color: #337ab7;
+  border: #337ab7;
+}
+.layout .active a{
+  color:white;
+}
+/*分页插件样式*/
+.layout #page{
+  width: 100%;
+  margin: 40px 0;
+}
+.layout #page ._pageBox{
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.layout #page *{
+  display: inline-block;
+}
+.layout #page li{
+  border: 1px solid #ddd;
+
+}
+.layout #page li span{
+  padding: 10px 15px;
+}
+._pop-tips-container{
+  width: 160px;
+  text-align: center;
+  /*color: #fff;*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+._pop-tips-container ._pop-tips img{
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 10px;
+}
+._pop-tips-container h1{
+  font-size: 20px;
+}
+
+._modal img._loading{
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 5px;
+  z-index: 9998;
+}
+._modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 1111;
+}
+.modal{
+  background-color: rgba(0, 0, 0, .6);
+}
+/*确定取消的弹框样式*/
+.modal-confirm{
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  margin-left: -300px;
+  border-radius: 5px;
+}
+.modal-confirm .modal-confirment{
+  width: 450px;
+  height: 250px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.modal-confirm .modal-confirment .close{
+  margin-right: 5px;
+}
+.modal-confirm .modal-confirment .modal-confirmder{
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+.modal-confirmder .modal-conftitle{
+  padding-bottom: 60px;
+  padding-top: 70px;
+}
+.router-link-exact-active,
+.router-link-active{
+  background-color: #263c66 !important;
+}
